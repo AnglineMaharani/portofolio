@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UI/UX Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="bg-gray-950 text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full bg-gray-950/70 backdrop-blur-md z-50 border-b border-gray-800">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-bold text-cyan-400">MyPortfolio</h1>
+    <div class="space-x-6 text-sm">
+      <a href="#home" class="hover:text-cyan-400">Home</a>
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#skills" class="hover:text-cyan-400">Skills</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="h-screen flex items-center justify-center px-6 relative overflow-hidden">
+
+  <!-- BACKGROUND GRADIENT GLOW -->
+  <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-gray-950 to-black"></div>
+
+  <!-- FLOATING GLOW EFFECT -->
+  <div class="absolute w-72 h-72 bg-cyan-500/30 blur-3xl rounded-full top-20 left-10 animate-pulse"></div>
+  <div class="absolute w-72 h-72 bg-purple-500/20 blur-3xl rounded-full bottom-20 right-10 animate-pulse"></div>
+
+  <div class="relative text-center z-10">
+
+    <!-- PROFILE IMAGE -->
+    <div class="flex justify-center mb-6">
+      <div class="p-1 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500">
+        <img src="image/profil.png"
+             class="w-32 h-32 rounded-full border-4 border-gray-900 shadow-xl"/>
+      </div>
+    </div>
+
+    <h2 class="text-5xl font-bold mb-4">
+      Hi, I'm <span class="text-cyan-400">UI/UX Designer</span>
+    </h2>
+
+    <p class="text-gray-300 mb-6 max-w-md mx-auto">
+      I design modern, clean, and user-friendly interfaces using Figma.
+    </p>
+
+    <a href="#projects"
+       class="px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-purple-500 hover:to-cyan-500 rounded-full font-semibold transition shadow-lg">
+      View Projects
+    </a>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 max-w-5xl mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-6 text-cyan-400">About Me</h2>
+
+  <p class="text-gray-400 leading-relaxed mb-4">
+    Perkenalkan, saya adalah seorang UI/UX Designer yang memiliki ketertarikan dalam desain antarmuka yang modern, sederhana, dan mudah digunakan. Saya berfokus pada pembuatan desain yang tidak hanya menarik secara visual, tetapi juga memberikan pengalaman pengguna yang nyaman.
+  </p>
+
+  <p class="text-gray-400 leading-relaxed mb-4">
+    Saya merupakan lulusan dari <span class="text-white font-semibold">Universitas Dipa Makassar</span> dengan jurusan <span class="text-white font-semibold">Sistem Informasi</span>. Selama masa studi, saya mempelajari berbagai hal terkait teknologi informasi, desain antarmuka, dan pengembangan sistem.
+  </p>
+
+  <p class="text-gray-400 leading-relaxed">
+    Saat ini saya terus mengembangkan keterampilan saya di bidang UI/UX Design, khususnya menggunakan Figma, serta memperdalam pemahaman tentang user experience dan user interface design.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-gray-900">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10 text-cyan-400">Skills</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <div class="p-6 bg-gray-800 rounded-xl text-center hover:scale-105 transition">
+        <i class="fa-brands fa-figma text-3xl text-pink-400"></i>
+        <p class="mt-2">Figma</p>
+      </div>
+
+      <div class="p-6 bg-gray-800 rounded-xl text-center hover:scale-105 transition">
+        <i class="fa-solid fa-pen-nib text-3xl text-cyan-400"></i>
+        <p class="mt-2">UI Design</p>
+      </div>
+
+      <div class="p-6 bg-gray-800 rounded-xl text-center hover:scale-105 transition">
+        <i class="fa-solid fa-user-check text-3xl text-green-400"></i>
+        <p class="mt-2">UX Research</p>
+      </div>
+
+      <div class="p-6 bg-gray-800 rounded-xl text-center hover:scale-105 transition">
+        <i class="fa-solid fa-code text-3xl text-yellow-400"></i>
+        <p class="mt-2">Frontend</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-10 text-cyan-400">Projects</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- PROJECT 1 -->
+    <div class="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition">
+    <img src="image/figma1.png" 
+    class="w-full h-48 object-cover transition duration-300 hover:scale-105" />
+
+    <div class="p-4">
+        <h3 class="font-bold">Desain Landing Page Coffee Shop – KKL di PT Grocee Teknologi Indonesia (2024)</h3>
+        <p class="text-gray-400 text-sm mb-4">
+       Proyek desain UI/UX yang dibuat pada kegiatan Kuliah Kerja Lapangan (KKL). Proyek ini berfokus pada perancangan antarmuka aplikasi mobile yang modern, 
+       sederhana, dan mudah digunakan dengan menggunakan Figma. Desain dibuat dengan memperhatikan pengalaman pengguna, alur navigasi, dan keteraturan visual  </p>
+
+        <a href="https://www.figma.com/proto/94Jir6haojKhBBh1PrewCB/KKL?node-id=703-2&t=HaJMye0iaORRNy62-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=703%3A2&hide-ui=1"
+        target="_blank"
+        class="inline-block px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-full text-sm font-semibold transition">
+        View Project
+        </a>
+    </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition">
+      <img src="image/figma2.png" 
+        class="w-full h-48 object-cover transition duration-300 hover:scale-105" />
+      <div class="p-4">
+        <h3 class="font-bold">Desain Landing Page UI/UX – Figma Project Showcase</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Landing page ini dirancang sebagai project UI/UX menggunakan Figma dengan pendekatan modern dan minimalis. Fokus utama desain adalah menciptakan pengalaman pengguna yang intuitif melalui tata letak yang bersih, tipografi yang jelas, serta struktur informasi yang mudah dipahami. Project ini merepresentasikan eksplorasi 
+          desain landing page untuk kebutuhan branding dan digital presentation.
+        </p>
+
+        <a href="https://www.figma.com/proto/NaPCMY3siSpVGticFhrb0Y/Project-Showcase?node-id=1-2&t=9XRTeXVsEvDLAtQF-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank"
+           class="inline-block px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-full text-sm font-semibold transition">
+          View Project
+        </a>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition">
+      <img src="image/figma3.png" 
+        class="w-full h-48 object-cover transition duration-300 hover:scale-105" />
+      <div class="p-4">
+        <h3 class="font-bold">Desain Landing Page Gardu Domino – UI/UX Figma Project</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Proyek ini merupakan desain landing page untuk Gardu Domino yang dibuat menggunakan Figma. Desain ini berfokus pada tampilan yang modern, dinamis, dan menarik untuk memperkenalkan brand serta layanan yang ditawarkan. Selain itu, desain ini juga dirancang untuk memberikan pengalaman pengguna 
+          yang mudah, jelas, dan interaktif dalam mengakses informasi.
+        </p>
+
+        <a href="https://www.figma.com/proto/1csYz8ILyOSkxygkGUOSnT/project-gardu?node-id=740-3&t=xV5yHRn8dJUX7mUz-0&scaling=scale-down-width&content-scaling=fixed&page-id=168%3A35&starting-point-node-id=740%3A3" target="_blank"
+           class="inline-block px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-full text-sm font-semibold transition">
+          View Project
+        </a>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition">
+      <img src="image/figma4.png" 
+        class="w-full h-48 object-cover transition duration-300 hover:scale-105" />
+      <div class="p-4">
+        <h3 class="font-bold">Desain UI Mobile Aplikasi Pemesanan Kopi – Figma UI/UX Project</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Desain UI mobile aplikasi pemesanan kopi yang dibuat menggunakan 
+          Figma dengan fokus pada tampilan modern, navigasi yang mudah, dan pengalaman pengguna yang nyaman.
+        </p>
+
+        <a href="https://www.figma.com/proto/28QRHTqMNqPxy7moyzlmcm/Pemesan-Kopi?node-id=2-2&t=RxnIUBDVcmTsXSAY-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2" target="_blank"
+           class="inline-block px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-full text-sm font-semibold transition">
+          View Project
+        </a>
+      </div>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition">
+      <img src="image/figma5.png" 
+        class="w-full h-48 object-cover transition duration-300 hover:scale-105" />
+      <div class="p-4">
+        <h3 class="font-bold">Desain Landing Page KWT Daun Talas – UI/UX Website Project</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Desain landing page KWT Daun Talas yang dibuat menggunakan Figma dengan fokus pada branding digital, penyampaian informasi yang jelas, serta pengalaman pengguna yang modern dan mudah diakses.
+        </p>
+
+        <a href="https://www.figma.com/proto/d8CgK9njStAJvJNaCczzSf/Untitled?node-id=1-2&starting-point-node-id=1%3A2" target="_blank"
+           class="inline-block px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-full text-sm font-semibold transition">
+          View Project
+        </a>
+      </div>
+    </div>
+
+    <!-- PROJECT 6 -->
+    <div class="bg-gray-900 rounded-xl overflow-hidden hover:scale-105 transition">
+      <img src="image/figma6.png" 
+        class="w-full h-48 object-cover transition duration-300 hover:scale-105" />
+      <div class="p-4">
+        <h3 class="font-bold">Desain UI Mobile Aplikasi Pemesanan Ramen – Project Tugas Kuliah</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          Desain UI mobile aplikasi pemesanan ramen yang dibuat sebagai project tugas kuliah menggunakan Figma dengan fokus pada tampilan modern dan kemudahan penggunaan.
+</p>
+        </p>
+
+        <a href="https://www.figma.com/proto/9kxfTbZI79EOI6n45sBS7j/Tugas-Kuliah?node-id=77-33&t=8ksxpKVDpUOmWQp0-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=77%3A33" target="_blank"
+           class="inline-block px-4 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-full text-sm font-semibold transition">
+          View Project
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT (UPDATED) -->
+<section id="contact" class="py-20 max-w-5xl mx-auto px-6 text-center">
+  <h2 class="text-3xl font-bold mb-10 text-cyan-400">Contact Me</h2>
+
+  <p class="text-gray-400 mb-6">
+    Feel free to reach out via email or Instagram
+  </p>
+
+  <div class="space-y-4">
+
+    <!-- EMAIL -->
+    <a href="mailto:anglinemaharanii@gmail.com"
+       class="flex items-center justify-center gap-3 text-lg hover:text-cyan-400 transition">
+      <i class="fa-solid fa-envelope"></i>
+      anglinemaharanii@gmail.com
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://instagram.com/anglinemhrn_"
+       target="_blank"
+       class="flex items-center justify-center gap-3 text-lg hover:text-pink-400 transition">
+      <i class="fa-brands fa-instagram"></i>
+      @anglinemhrn_
+    </a>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-500 border-t border-gray-800">
+  © 2026 UI/UX Portfolio Angline Maharani. All rights reserved.
+</footer>
+
+</body>
+</html>
